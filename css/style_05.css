@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(180deg, #D6E1FF 30%, #E0E8FF 30%);
+}
+
+.card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23%; /* largura total dos dois containers */
+    height: 30em;
+    background-color: rgba(255, 0, 0, 0.5); /* semi-transparente para visualização */
+}
+

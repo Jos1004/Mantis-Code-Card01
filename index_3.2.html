@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mantis code</title>
+    <style>
+        body {
+            display: flex;
+            position: relative; /* necessário para que o container "em cima" seja posicionado relativamente ao body */
+        }
+
+        .container1,
+        .container2 {
+            flex: 1; /* para que eles fiquem lado a lado */
+            height: 200px;
+            background-color: lightblue;
+            margin: 5px;
+        }
+
+        .overlay-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; /* largura total dos dois containers */
+            height: 50px;
+            background-color: rgba(255, 0, 0, 0.5); /* semi-transparente para visualização */
+            pointer-events: none; /* para que não bloqueie interações dos containers embaixo */
+        }
+
+    </style>
+</head>
+<body>
+
+  <div class="container1">Container 1</div>
+  <div class="container2">Container 2</div>
+  <div class="overlay-container">Container em cima</div>
+
+</body>
+</html>

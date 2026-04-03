@@ -1,0 +1,218 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(180deg, #D6E1FF 36%, #E0E8FF 36%);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    font-family: "Red Hat Display", serif;
+}
+
+.card{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 30px;
+    background: white;
+    z-index: 5;
+    min-height: 576px;
+    min-width: 376px;
+    border-radius: 20px;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 40px 40px -40px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.card_header{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    height: 180px;
+    width: 100%;
+    background-image: url("../images/Music_Flatline.png");
+    background-size: cover;
+    background-position: 100% 10%;
+    background-repeat: no-repeat;
+    -webkit-border-top-right-radius: 20px;
+    -webkit-border-top-left-radius: 20px;
+}
+
+.card_body{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 84%;
+    gap: 18px;
+}
+
+p{
+    font-size: 13.5px;
+    color: #717FA6;
+    margin: 0;
+}
+
+#titulo{
+    font-weight: 900;
+    color: #1F2E55;
+    margin: 0;
+    font-size: 24px;
+}
+
+#p1{
+    line-height: 22px;
+    font-weight: 500;
+    height: auto;
+    width: 250px;
+}
+
+.price{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    height: 90px;
+    width: 100%;
+    background-color: #F7F9FF;
+    margin-bottom: 6px;
+}
+
+#img2{
+    width: 45px;
+    height: 45px;
+}
+
+a{
+    font-size: 12.3px;
+    font-weight: 800;
+    margin: 0;
+    text-underline-offset: 2px;
+    cursor: pointer;
+    font-family: "Red Hat Display", serif;
+    color:#382AE1;
+}
+a:hover{
+    text-decoration: none;
+    color: #766CF1;
+}
+
+span{
+    font-weight:900;
+    color: #1F2E55;
+}
+
+#p2{
+  transform: translateX(-30px);
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-weight: 500;
+}
+
+button{
+    background: #382AE1;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12.5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 800;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 10px 3px;
+    margin: 0;
+    font-family: "Red Hat Display", serif;
+}
+
+button:hover{
+    background: #766CF1;
+}
+
+#cancel{
+    font-size: 12.5px;
+    background: transparent;
+    border: none;
+    font-weight: 900;
+    color:#717FA6;
+    cursor: pointer;
+    font-family: "Red Hat Display", serif;
+}
+
+#cancel:hover{
+    color: #1F2E55;
+}
+
+/*tela de fundo*/
+
+.container{
+    display: flex;
+    border-radius: 60%;
+    height: 19em;
+    width: 50em;
+    /*border: 1px solid black;*/
+    flex: 1;
+}
+
+.container:nth-of-type(1){
+    background: #D6E1FF;
+    transform: translate(-351px,-5px);
+}
+
+.container:nth-of-type(2){
+    background: #E0E8FF;
+    transform: translate(350px,-170px);
+}
+
+/*celular*/
+@media (max-width: 600px) {
+    body{
+        background: linear-gradient(180deg, #D6E1FF 24%, #E0E8FF 24%);
+    }
+
+    .card_header{
+      background-size: 98.5%;
+      padding-right: 5px;
+      margin-right: 4px;
+      transform: translateY(-2px);
+    }
+
+    .container{
+        width: 28em;
+    }
+
+    .container:nth-of-type(1){
+        transform: translate(-160px,-150px);
+    }
+    .container:nth-of-type(2){
+        transform: translate(135px,-230px);
+    }
+
+    .card{
+        min-width: 86%;
+        min-height: 83%;
+        gap: 15px;
+    }
+
+    button, #cancel, #p1, #p2{
+        font-size: 14px;
+    }
+
+    #p2{
+        transform: translateX(-15px);
+    }
+}

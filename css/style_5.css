@@ -1,0 +1,240 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(180deg, #D6E1FF 40%, #E0E8FF 40%);
+    overflow: hidden;
+    font-family: "Red Hat Display", serif;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+/*background* para desktop*/
+.container{
+    min-width: 60em;
+    height: 350px;
+    border-radius: 50%;
+    z-index: 0;
+    /*border: #1A4032 1px solid;*/
+}
+
+#c1{
+    transform: translate(70px, -180px);
+    background: #D6E1FF;
+}
+
+#c2{
+
+    transform: translate(-85px, 11px);
+    background: #E0E8FF;
+}
+
+/*card*/
+
+.card{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    align-content: center;
+    gap:38px;
+    background-color: white;
+    width: 373px;
+    height: 597px;
+    z-index: 5;
+    position: absolute;
+    border-radius: 20px;
+    box-shadow: 0 40px 40px -20px #0D30BD27;
+}
+
+.card-header{
+    background-image: url("../images/Music_Flatline.png");
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: 70% 10%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 324px;
+    height: 324px;
+    gap: 25px;
+    margin: 0;
+}
+
+#title{
+    color:#1F2E55;
+    font-weight: 900;
+    margin: 0;
+    transform: translateY(10px);
+}
+
+.card-text{
+    text-align: center;
+    color: #717FA6;
+    font-weight: 500;
+    width: 300px;
+    height: 54px;
+    margin: 0;
+    font-size: 13.6px;
+}
+
+#texto{
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.card-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 300px;
+    height: 80px;
+    background-color: #F7F9FF;
+    border-radius: 11px;
+}
+
+.media{
+    width: 150px;
+    height: 80px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 11px;
+    margin-right: 20px;
+}
+
+img{
+    width: 42px;
+    height: 42px;
+}
+
+#text{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    align-content: center;
+    gap: 3px;
+    width: 85px;
+    height: 44px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+span{
+    color: #1F2E55;
+    font-weight: 900;
+}
+
+a{
+    font-size: 12.3px;
+    font-weight: 800;
+    text-underline-offset: 2.8px;
+    color: #382AE1;
+    margin: 0;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #766CF1;
+}
+
+button{
+    width: 300px;
+    min-height: 40px;
+    color: white;
+    font-weight: 700;
+    border-radius: 11px;
+    border: none;
+    background: #382AE1;
+    font-family: 'Red Hat Display', serif;
+    letter-spacing: 1px;
+    font-size: 13px;
+    cursor: pointer;
+    box-shadow: 0 20px 20px 0 #382AE131;
+}
+
+button:hover{
+    background: #766CF1;
+}
+
+input{
+    border: none;
+    background: none;
+    color:#717FA6;
+    font-size: 13px;
+    font-weight: 900;
+    font-family: 'Red Hat Display', serif;
+    cursor: pointer;
+}
+
+input:hover{
+   color: #1F2E55;
+}
+
+@media (max-width: 600px) {
+    body{
+        background: linear-gradient(180deg, #D6E1FF 20.9%, #E0E8FF 20.9%);/*30% 40%*/
+    }
+    .container{
+        min-width: 100%;
+        height: 18%;
+    }
+
+    #c1{
+        transform: translate(25px, -220px);
+    }
+
+    #c2{
+        transform: translate(-15px, -163px);
+    }
+
+    .card{
+        width: 86%;
+        height: 561px;
+        gap: 25px;
+    }
+
+    .card-header{
+        height: 160px;
+    }
+
+    .card-text{
+        width: 250px;
+    }
+
+    button, .card-body, .card-content{
+        width: 91%;
+    }
+
+    button{
+        min-height: 47px;
+    }
+
+    button, input, .card-text{
+        font-size: 14px;
+    }
+
+    .media{
+        gap: 15px;
+    }
+    a{
+        text-underline-offset: 1px;
+        font-size: 13px;
+        margin-right: 4px;
+    }
+}
