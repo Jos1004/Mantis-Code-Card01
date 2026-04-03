@@ -2,35 +2,31 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mantis Code</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/style_5.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
-   <div class="c" id="con"></div>
-   <div class="c" id="con1"></div>
-   <div class="card" id="carta">
-       <img src="images/Music_Flatline.png" alt="garota ouvindo musica">
+   <div class="container" id="c1"></div>
+   <div class="container" id="c2"></div>
+   <div class="card">
+       <div class="card-header"></div>
        <div class="card-body">
-           <h4 id="titulo">Order Summary</h4>
-           <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!<p>
+          <h2 id="title">Order Summary</h2>
+          <p class="card-text" id="texto">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+             <div class="card-content">
+                 <div class="media">
+                     <img src="images/Group%202.png" alt="nota de musica">
+                     <p class="card-text" id="text"><span>Annual Plan</span>$59.99/year</p>
+                 </div>
+                 <a href="http://">Change</a>
+             </div>
+             <button>Proceed to Payment</button>
+             <input name="botao" type="button" value="Cancel Order">
        </div>
-
-       <div id="carta2">
-           <div id="centro">
-           <img src="images/Group%202.png" alt="nota de musica" id="nota">
-           <div id="carta3">
-              <label>Annual Plan</label>
-              <label>$59.99/year</label>
-           </div>
-               <a href="#">Change</a>
-           </div>
-       </div>
-
-       <input type="button" value="Proceed to Payment" name="payment" id="payment">
-       <input type="button" value="Cancel Order" id="cancel">
    </div>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
