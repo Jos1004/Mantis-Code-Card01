@@ -8,3 +8,8 @@ index2.html
 js
 vídeos
 Screenshot 2025-08-13 112421.png
+css/style
+css/style_03
+css/style_05
+css/style_4
+css/style02
