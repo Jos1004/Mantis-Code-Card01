@@ -238,3 +238,17 @@ input:hover{
         margin-right: 4px;
     }
 }
+
+@media (min-width: 1620px) {
+    .container{
+        height: 40%;
+    }
+
+    #c1{
+        transform: translate(-11px, -168px);
+    }
+
+    #c2{
+        transform: translate(25px, -80px);
+    }
+}
